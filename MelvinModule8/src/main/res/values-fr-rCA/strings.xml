@@ -4,4 +4,6 @@
 <!--Section A-->
 <resources>
     <string name="app_name">MelvinLayout8</string>
+    <string name="home_menu_button">Home</string>
+    <string name="melvinmenu">Melvin</string>
 </resources>
