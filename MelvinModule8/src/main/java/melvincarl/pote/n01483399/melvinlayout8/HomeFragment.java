@@ -72,8 +72,9 @@ public class HomeFragment extends Fragment {
 
                 try {
                    outputStream.write(getResources().getString(R.string.fullName).getBytes());
-                   outputStream.write(getResources().getString(R.string.file2).getBytes());
-                   outputStream.write(getResources().getString(R.string.file3).getBytes());
+                   outputStream.write(getResources().getString(R.string.studentID).getBytes());
+                   outputStream.write(getResources().getString(R.string.programmingLanguages).getBytes());
+                    outputStream.write(getResources().getString(R.string.languages).getBytes());
                    outputStream.close();
                 } catch (IOException ioException){
                     ioException.printStackTrace();

@@ -10,9 +10,10 @@
     <string name="save_courses_button">Save Courses</string>
     <string name="save_file_button">Save File</string>
     <string name="web_data">Web Data</string>
-    <string name="fullName" />
-    <string name="file2" />
-    <string name="file3" />
+    <string name="fullName"> Melvin Carl Pote </string>
+    <string name="studentID">N01483399</string>
+    <string name="programmingLanguages">C, JavaScript, Python</string>
+    <string name = "languages">English, Tagalog</string>
     <string name="error1">ERROR</string>
     <string name="error2">ERROR</string>
     <string name="map_title">Map</string>
