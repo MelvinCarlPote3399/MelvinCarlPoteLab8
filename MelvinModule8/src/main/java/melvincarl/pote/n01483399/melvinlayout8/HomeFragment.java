@@ -24,10 +24,12 @@ import java.net.HttpURLConnection;
 import java.nio.charset.StandardCharsets;
 import java.io.IOException;
 import java.net.URL;
+import java.net.MalformedURLException;
+import java.util.Objects;
 
 public class HomeFragment extends Fragment {
     private SharedPreferences.Editor editor;
-    final String textLink = "https://www.reddit.com/";
+    final String textLink = "https://www.google.ca/";
 
     public HomeFragment() {
         // Required empty public constructor
@@ -95,8 +97,8 @@ public class HomeFragment extends Fragment {
                             try {
                                 url = new URL(textLink);
                                 urlConnection = (HttpURLConnection) url.openConnection();
-                                int responsecode = urlConnection.getResponseCode();
-                                if (responsecode == HttpURLConnection.HTTP_OK) {
+                                int responseCode = urlConnection.getResponseCode();
+                                if (responseCode == HttpURLConnection.HTTP_OK) {
                                     BufferedReader bufferReader = new BufferedReader(new InputStreamReader(url.openStream()));
                                     String oneline;
                                     String dataFromInternet = "";
@@ -116,7 +118,7 @@ public class HomeFragment extends Fragment {
                                     requireActivity().runOnUiThread(new Runnable() {
                                         @Override
                                         public void run() {
-                                            Toast.makeText(getContext(), String.valueOf(responsecode), Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getContext(), String.valueOf(responseCode), Toast.LENGTH_LONG).show();
                                         }
                                     });
                                 }

@@ -20,5 +20,7 @@
     <string name="no_data">NO DATA</string>
     <string name="read_courses_button">Read Courses</string>
     <string name="read_file_button">Read File</string>
+    <string name="no_data_courses">NO DATA Courses</string>
+    <string name="no_data_file">NO DATA File</string>
     <string-array name="courseArray">Course Array</string-array>
 </resources>

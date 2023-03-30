@@ -1,6 +1,5 @@
 package melvincarl.pote.n01483399.melvinlayout8;
 
-import java.io.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 //import com.example.Fragment.*;
@@ -12,9 +11,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.net.Uri;
-
-import android.os.Bundle;
 
 public class PoteActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -33,7 +29,7 @@ public class PoteActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     HomeFragment homeFragment = new HomeFragment();
-    PoteFragment poteFragment = new PoteFragment();
+    MelvinFragment poteFragment = new MelvinFragment();
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){

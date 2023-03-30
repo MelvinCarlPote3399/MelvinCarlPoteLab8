@@ -21,9 +21,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class PoteFragment extends Fragment {
+public class MelvinFragment extends Fragment {
 
-    public PoteFragment() {
+    public MelvinFragment() {
         // Required empty public constructor
     }
 
@@ -55,7 +55,7 @@ public class PoteFragment extends Fragment {
                     dataField.setText(textCourse);
                 }
                 else {
-                    dataField.setText(getResources().getString(R.string.no_data));
+                    dataField.setText(getResources().getString(R.string.no_data_courses));
                 }
 
             }
@@ -83,7 +83,7 @@ public class PoteFragment extends Fragment {
                     String contents = stringBuilder.toString();
 
                     if (contents.length() == 0){
-                        dataField.setText(getResources().getString(R.string.no_data));
+                        dataField.setText(getResources().getString(R.string.no_data_file));
                     }
                     else {
                         dataField.setText(contents);
