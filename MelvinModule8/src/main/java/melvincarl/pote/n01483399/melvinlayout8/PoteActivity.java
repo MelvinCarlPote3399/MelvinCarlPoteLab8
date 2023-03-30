@@ -67,7 +67,7 @@ public class PoteActivity extends AppCompatActivity implements BottomNavigationV
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
-                return true;
+                //return true;
         }
         return super.onOptionsItemSelected(item);
     }

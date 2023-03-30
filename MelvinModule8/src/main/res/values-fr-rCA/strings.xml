@@ -17,5 +17,8 @@
     <string name="error1">ERROR</string>
     <string name="error2">ERROR</string>
     <string name="map_title">Map</string>
+    <string name="no_data">NO DATA</string>
+    <string name="read_courses_button">Read Courses</string>
+    <string name="read_file_button">Read File</string>
     <string-array name="courseArray">Course Array</string-array>
 </resources>

@@ -85,7 +85,55 @@ public class HomeFragment extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            URL url;
+                            HttpURLConnection urlConnection;
 
+                            try {
+                                url = new URL(textLink);
+                                urlConnection = (HttpURLConnection) url.openConnection();
+                                int responsecode = urlConnection.getResponseCode();
+                                if (responsecode == HttpURLConnection.HTTP_OK) {
+                                    BufferedReader bufferReader = new BufferedReader(new InputStreamReader(url.openStream()));
+                                    String oneline;
+                                    String dataFromInternet = "";
+
+                                    while ((oneline = bufferReader.readLine()) != null) {
+                                        dataFromInternet += oneline + "\n";
+                                    }
+                                    bufferReader.close();
+                                    final String finalDataFromInternet = dataFromInternet;
+                                    requireActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(getContext(), finalDataFromInternet, Toast.LENGTH_LONG).show();
+                                        }
+                                    });
+                                } else {
+                                    requireActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(getContext(), String.valueOf(responsecode), Toast.LENGTH_LONG).show();
+                                        }
+                                    });
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                                requireActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Toast.makeText(getContext(), getResources().getString(R.string.error1), Toast.LENGTH_LONG).show();
+                                    }
+                                });
+                            }
+                        }
+                    }).start();
+                } catch (Exception e) {
+                    Toast.makeText(context, getResources().getString(R.string.error2) + e, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
