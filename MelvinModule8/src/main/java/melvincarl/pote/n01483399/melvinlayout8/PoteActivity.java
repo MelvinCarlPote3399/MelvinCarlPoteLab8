@@ -1,3 +1,8 @@
+/*
+Name: Melvin Carl Pote
+Student ID: N01483399
+Section A
+ */
 package melvincarl.pote.n01483399.melvinlayout8;
 
 import androidx.appcompat.app.AppCompatActivity;

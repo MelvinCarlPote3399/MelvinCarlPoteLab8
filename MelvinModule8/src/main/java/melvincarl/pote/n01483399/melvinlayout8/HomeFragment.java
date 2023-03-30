@@ -1,3 +1,8 @@
+/*
+Name: Melvin Carl Pote
+Student ID: N01483399
+Section A
+ */
 package melvincarl.pote.n01483399.melvinlayout8;
 
 import android.content.Context;
@@ -29,7 +34,7 @@ import java.util.Objects;
 
 public class HomeFragment extends Fragment {
     private SharedPreferences.Editor editor;
-    final String textLink = "https://www.google.ca/";
+    final String textLink = "https://www.reddit.com/";
 
     public HomeFragment() {
         // Required empty public constructor
