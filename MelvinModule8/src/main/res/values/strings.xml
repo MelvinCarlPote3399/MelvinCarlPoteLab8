@@ -30,5 +30,4 @@
         <item>Technical Reading and Writing Skills</item>
         <item>Computer Hardware and Operating Systems</item>
     </string-array>
-    <string-array name="courseArray">Course Array</string-array>
 </resources>

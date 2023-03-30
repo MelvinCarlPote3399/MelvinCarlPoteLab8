@@ -5,11 +5,11 @@
 <resources>
     <string name="app_name">MelvinLayout8</string>
     <string name="home_menu_button">Home</string>
-    <string name="melvinmenu">Melvin</string>
+    <string name="melvinmenu">Maison</string>
     <string name="nameText">Melvin Carl Pote (N01483399)</string>
-    <string name="save_courses_button">Save Courses</string>
-    <string name="save_file_button">Save File</string>
-    <string name="web_data">Web Data</string>
+    <string name="save_courses_button">Enregistrer les cours</string>
+    <string name="save_file_button">Enregistrer le fichier</string>
+    <string name="web_data">Données Web</string>
     <string name="fullName"> Melvin Carl Pote </string>
     <string name="studentID">N01483399</string>
     <string name="programmingLanguages">C, JavaScript, Python</string>
@@ -18,9 +18,9 @@
     <string name="error2">ERROR</string>
     <string name="map_title">Map</string>
     <string name="no_data">NO DATA</string>
-    <string name="read_courses_button">Read Courses</string>
-    <string name="read_file_button">Read File</string>
+    <string name="read_courses_button">Lire les cours</string>
+    <string name="read_file_button">Lire le fichier</string>
     <string name="no_data_courses">NO DATA Courses</string>
     <string name="no_data_file">NO DATA File</string>
-    <string-array name="courseArray">Course Array</string-array>
+
 </resources>
