@@ -9,6 +9,20 @@
     <string name="save_courses_button">Save Courses</string>
     <string name="save_file_button">Save File</string>
     <string name="web_data">Web Data</string>
+    <string name="fullName" />
+    <string name="file2" />
+    <string name="file3" />
+    <string name="error1">ERROR</string>
+    <string name="error2">ERROR</string>
+    <string name="map_title">Map</string>
     <!-- TODO: Remove or change this placeholder text -->
-
+    <string-array name="courses">
+        <item>Programming Fundamentals</item>
+        <item>Electric Circuits</item>
+        <item>Digital Fundamentals</item>
+        <item>Technical Mathematics</item>
+        <item>Technical Reading and Writing Skills</item>
+        <item>Computer Hardware and Operating Systems</item>
+    </string-array>
+    <string-array name="courseArray">Course Array</string-array>
 </resources>
