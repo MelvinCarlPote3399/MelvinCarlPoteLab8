@@ -6,4 +6,8 @@
     <string name="app_name">MelvinLayout8</string>
     <string name="home_menu_button">Home</string>
     <string name="melvinmenu">Melvin</string>
+    <string name="nameText">Melvin Carl Pote (N01483399)</string>
+    <string name="save_courses_button">Save Courses</string>
+    <string name="save_file_button">Save File</string>
+    <string name="web_data">Web Data</string>
 </resources>

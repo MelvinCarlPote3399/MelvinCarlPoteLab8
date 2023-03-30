@@ -1,15 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#28E2F3"
     tools:context=".PoteActivity">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/firstFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/homeFragTitle"
+        android:layout_width="154dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="129dp"
+        android:text="@string/nameText"
+        android:textColor="#F80505"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="404dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#00008B"
+        android:text="@string/save_courses_button"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="398dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#8B0000"
+        android:text="@string/save_file_button"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="393dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/web_data"
+        android:backgroundTint="#023020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
